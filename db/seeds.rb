@@ -47,4 +47,6 @@ end
 
 # Create private messages
 nb_private_messages.times do |i|
-  pm = PrivateMessage.create(content: "blablabla gem les frites #{i}", )
+  pm = PrivateMessage.create(content: "blablabla gem les frites #{i}", recipient_id: Random.new.rand(1..20), sender_id: Random.new.rand(1..20))
+
+  #ATTENTION QUENTIN, JAI RAJOUTÉ QUELQUES TRUCS LIGNE 50, POUR ESSAYER DE GENERER DES RECIPIENTS ET DES SENDERS (a partir de recipient_id)
