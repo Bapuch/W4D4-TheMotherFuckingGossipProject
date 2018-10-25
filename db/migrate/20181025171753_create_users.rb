@@ -7,8 +7,6 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.string :email
       t.integer :age
       t.timestamps
-      t.references :sender, index: true
-      t.references :recipient, index: true 
     end
   end
 end

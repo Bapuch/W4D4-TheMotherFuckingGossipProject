@@ -59,12 +59,8 @@ ActiveRecord::Schema.define(version: 2018_10_25_194732) do
     t.integer "age"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "sender_id"
-    t.integer "recipient_id"
     t.integer "city_id"
     t.index ["city_id"], name: "index_users_on_city_id"
-    t.index ["recipient_id"], name: "index_users_on_recipient_id"
-    t.index ["sender_id"], name: "index_users_on_sender_id"
   end
 
 end
